@@ -9,10 +9,10 @@ using Engine.Models;
 
 namespace Engine.ViewModels
 {
-    class GameSession
+    public class GameSession
     {
         //Using Player allows us to connect to Players in Models folder
-        Player CurrentPlayer { get; set; }
+        public Player CurrentPlayer { get; set; }
 
         //Will be creating character instances in other ways in the future, but for notes sake:
         public GameSession()
@@ -23,6 +23,7 @@ namespace Engine.ViewModels
             CurrentPlayer.HitPoints = 100;
             CurrentPlayer.ExpPoints = 0;
             CurrentPlayer.Gold = 50;
+            CurrentPlayer.Level = 1;
 
         }
     }
